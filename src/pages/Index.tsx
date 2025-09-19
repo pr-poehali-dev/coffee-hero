@@ -4,10 +4,10 @@ import Icon from '@/components/ui/icon';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-muted to-accent/20">
+    <div className="min-h-screen bg-background">
       {/* Hero Section - Обложка комикса */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5"></div>
         
         {/* Comic panels background effect */}
         <div className="absolute top-10 left-10 w-32 h-32 comic-panel opacity-20"></div>
@@ -65,7 +65,7 @@ const Index = () => {
       </section>
 
       {/* Origin Story Section - История происхождения */}
-      <section className="py-20 bg-white relative">
+      <section className="py-20 bg-background relative">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-hero text-5xl font-black text-primary comic-text-shadow mb-4 transform rotate-1">
@@ -82,10 +82,10 @@ const Index = () => {
                     <Icon name="Coffee" size={40} className="text-muted-foreground" />
                   </div>
                   <h3 className="font-hero text-3xl font-black text-foreground mb-4">БЫЛО...</h3>
-                  <div className="bg-gray-100 p-6 rounded-lg mb-4">
-                    <p className="text-lg text-gray-600">😴 Обычный кофе</p>
-                    <p className="text-lg text-gray-600">😐 Обычные стаканчики</p>
-                    <p className="text-lg text-gray-600">😕 Никакого вау-эффекта</p>
+                  <div className="bg-muted p-6 rounded-lg mb-4">
+                    <p className="text-lg text-muted-foreground">😴 Обычный кофе</p>
+                    <p className="text-lg text-muted-foreground">😐 Обычные стаканчики</p>
+                    <p className="text-lg text-muted-foreground">😕 Никакого вау-эффекта</p>
                   </div>
                 </div>
               </div>
@@ -112,7 +112,7 @@ const Index = () => {
       </section>
 
       {/* How It Works - Схема приключения */}
-      <section className="py-20 bg-gradient-to-br from-secondary/10 to-primary/10">
+      <section className="py-20 bg-gradient-to-br from-secondary/5 to-primary/5">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-hero text-5xl font-black text-primary comic-text-shadow mb-4 transform -rotate-1">
@@ -157,7 +157,7 @@ const Index = () => {
       </section>
 
       {/* Superhero Team - Команда героев */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-hero text-5xl font-black text-primary comic-text-shadow mb-4 transform rotate-1">
@@ -232,12 +232,12 @@ const Index = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Button className="pow-button bg-white text-primary border-primary hover:bg-primary hover:text-white px-12 py-6 text-2xl font-black rounded-xl">
+              <Button className="pow-button bg-card text-primary border-primary hover:bg-primary hover:text-card px-12 py-6 text-2xl font-black rounded-xl">
                 <Icon name="Coffee" className="mr-3" size={32} />
                 СДЕЛАТЬ МОЮ КОФЕЙНЮ ЛЕГЕНДОЙ!
               </Button>
               
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-8 py-6 text-xl font-bold rounded-xl">
+              <Button variant="outline" className="border-secondary text-secondary hover:bg-secondary hover:text-background px-8 py-6 text-xl font-bold rounded-xl">
                 <Icon name="Phone" className="mr-2" size={24} />
                 Связаться
               </Button>

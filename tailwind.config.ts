@@ -63,12 +63,9 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				comic: {
-					cyan: '#FF6B35',
-					yellow: '#4ECDCD',
-					white: '#FFE66D',
-					pink: '#FF8694',
-					black: '#2E3440',
-					blue: '#FF6B35'
+					dark: '#0f172a',
+					blue: '#3b82f6',
+					yellow: '#fbbf24'
 				}
 			},
 			borderRadius: {
