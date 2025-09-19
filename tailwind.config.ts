@@ -112,9 +112,8 @@ export default {
 				'pow-effect': 'pow-effect 0.6s ease-out'
 			},
 			fontFamily: {
-				'comic': ['Montserrat', 'Arial Black', 'sans-serif'],
-				'comic-speech': ['Rubik', 'Comic Sans MS', 'cursive'],
-				'hero': ['Oswald', 'Impact', 'sans-serif']
+				'apple': ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+				'display': ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif']
 			}
 		}
 	},
