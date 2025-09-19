@@ -112,7 +112,7 @@
   }
 
   .speech-bubble {
-    @apply relative bg-white border-3 border-black rounded-2xl p-6;
+    @apply relative bg-white border-4 border-black rounded-2xl p-6;
   }
 
   .speech-bubble::after {
