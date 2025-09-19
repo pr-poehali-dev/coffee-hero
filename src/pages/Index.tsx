@@ -5,9 +5,14 @@ import Icon from '@/components/ui/icon';
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      {/* Floating orbs */}
+      <div className="floating-orb w-32 h-32 top-20 left-20 opacity-60"></div>
+      <div className="floating-orb w-24 h-24 top-40 right-32 opacity-40" style={{animationDelay: '2s'}}></div>
+      <div className="floating-orb w-40 h-40 bottom-32 left-1/4 opacity-30" style={{animationDelay: '4s'}}></div>
+      
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="apple-blur-bg absolute inset-0"></div>
+        <div className="morphism-bg absolute inset-0"></div>
         
         <div className="container mx-auto px-6 text-center relative z-10">
           <div className="max-w-4xl mx-auto">
@@ -25,19 +30,19 @@ const Index = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button className="apple-button text-lg px-12 py-4">
+                <button className="liquid-button text-lg px-12 py-4">
                   Начать сейчас
                   <Icon name="ArrowRight" className="ml-2" size={20} />
-                </Button>
-                <Button variant="outline" className="apple-button-secondary text-lg px-8 py-4">
+                </button>
+                <button className="liquid-button-outline text-lg px-8 py-4">
                   Посмотреть демо
-                </Button>
+                </button>
               </div>
             </div>
 
             {/* Hero Image */}
             <div className="relative">
-              <div className="apple-card p-8 mx-auto max-w-lg">
+              <div className="liquid-glass p-8 mx-auto max-w-lg">
                 <img 
                   src="/img/b8e0e371-7f7a-4dd2-b4b1-7850cc1fa93b.jpg" 
                   alt="Персонализированные стаканчики" 
@@ -88,7 +93,7 @@ const Index = () => {
                 description: "Клиент получает уникальный стаканчик и делится в соцсетях"
               }
             ].map((step, index) => (
-              <Card key={index} className="apple-card p-8 text-center group">
+              <Card key={index} className="liquid-glass p-8 text-center group">
                 <div className="text-primary/20 text-6xl font-bold mb-4">{step.number}</div>
                 <Icon name={step.icon as any} size={48} className="mx-auto mb-6 text-primary group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="apple-text-large text-2xl mb-4">{step.title}</h3>
@@ -100,7 +105,8 @@ const Index = () => {
       </section>
 
       {/* Benefits */}
-      <section className="py-32 bg-muted/20">
+      <section className="py-32 bg-muted/20 relative">
+        <div className="floating-orb w-20 h-20 top-10 right-20 opacity-40" style={{animationDelay: '1s'}}></div>
         <div className="container mx-auto px-6">
           <div className="text-center mb-20">
             <h2 className="apple-text-large text-5xl md:text-6xl mb-6">
@@ -138,7 +144,7 @@ const Index = () => {
                 <p className="apple-text-body text-muted-foreground mb-8 text-lg leading-relaxed">
                   {benefit.description}
                 </p>
-                <div className="apple-glass p-6 rounded-2xl">
+                <div className="liquid-glass p-6 rounded-2xl">
                   <div className="text-4xl font-bold text-primary mb-2">{benefit.metric}</div>
                   <div className="text-sm text-muted-foreground">{benefit.metricLabel}</div>
                 </div>
@@ -161,7 +167,7 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Card className="apple-card p-8">
+            <Card className="liquid-glass p-8">
               <img 
                 src="/img/0daafdaa-54aa-4d4f-87d5-16b5df49672e.jpg" 
                 alt="До и после" 
@@ -173,7 +179,7 @@ const Index = () => {
               </p>
             </Card>
 
-            <Card className="apple-card p-8">
+            <Card className="liquid-glass p-8">
               <img 
                 src="/img/9845a93c-7aff-4eda-9e9c-c4dcc95f94e7.jpg" 
                 alt="Команда" 
@@ -201,18 +207,18 @@ const Index = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Button className="apple-button text-xl px-16 py-5">
+              <button className="liquid-button text-xl px-16 py-5">
                 <Icon name="Zap" className="mr-3" size={24} />
                 Получить предложение
-              </Button>
+              </button>
               
-              <Button variant="outline" className="apple-button-secondary text-xl px-12 py-5">
+              <button className="liquid-button-outline text-xl px-12 py-5">
                 <Icon name="Phone" className="mr-2" size={20} />
                 Связаться с нами
-              </Button>
+              </button>
             </div>
 
-            <div className="mt-16 apple-glass p-8 rounded-3xl max-w-2xl mx-auto">
+            <div className="mt-16 liquid-glass p-8 rounded-3xl max-w-2xl mx-auto">
               <p className="apple-text-body text-sm text-muted-foreground">
                 🚀 Присоединяйтесь к революции персонализации в HoReCa
               </p>
