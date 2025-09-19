@@ -212,7 +212,7 @@ const Index = () => {
       {/* Final Battle - Финальная битва */}
       <section className="py-20 bg-gradient-to-br from-primary via-accent to-secondary text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="w-full h-full bg-[url('data:image/svg+xml,%3Csvg width="100" height="100" xmlns="http://www.w3.org/2000/svg"%3E%3Cdefs%3E%3Cpattern id="comic" patternUnits="userSpaceOnUse" width="100" height="100"%3E%3Cpath d="M0 0h100v100H0z" fill="none"/%3E%3Cpath d="M10 10h80v80H10z" fill="none" stroke="white" stroke-width="2"/%3E%3C/pattern%3E%3C/defs%3E%3Crect width="100%25" height="100%25" fill="url(%23comic)"/%3E%3C/svg%3E')]"></div>
+          <div className="w-full h-full bg-gradient-to-br from-white/10 via-transparent to-white/5"></div>
         </div>
         
         <div className="container mx-auto px-6 text-center relative z-10">
